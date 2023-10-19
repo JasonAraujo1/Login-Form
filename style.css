@@ -18,6 +18,7 @@ body *{
 :root{
     --bg-color-img: rgb(244, 239, 220);
     --bg-color-black: #191816;
+    --bg-form-black:#24221F;
     --bege:#D4CCB6;
     --cinza:#AFB6C2;
     --amarelo:#FFC632;
@@ -28,38 +29,133 @@ body *{
     display: flex;
     
 }
+
+
+
+
+ /*ASIDE */
 aside{
     flex: 1;
     display: flex;
     height: 100vh;
     background-color: var(--bg-color-black);
     color: white;
+    flex-direction: column;
     
 }
 
- aside header{
-    display: flex;
-    width: 100%;
-    padding: 0 150px;
+
+
+/*aside header*/
+ aside header{/*logo. img e texto*/
+   display: flex;
+   padding: 30px 30px 100px;
+   
+    align-items: center;
+    
+      
 }
 
-aside header p{
+aside header img{/*logo img*/
+    
+transform: translateY(20%);
+    
+    
+}
+
+
+
+aside header p span{/*logo texto*/
     color: var(--bege);
     font-family: Poppins;
-    font-size: 15px;
+    font-size: 12px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
+    
+
     }
 
-section div h1{
+
+
+
+
+
+
+/*SECTION*/   
+  section {
+    padding: 40px 80px;
+    background-color: var(--bg-form-black);
+    
+    border: 2px solid red;
+    
+}
+
+ /*section body*/
+section div h1{/*faça seu login*/
     color: var(--bege);
+    display: flex;font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+section div h1 i{/*icon login*/
+    color: var(--amarelo);
+}
+
+section div h1 span{/*tag 'p' faça seu login*/
+    padding: 0 10px;
+    
+    
+}
+
+section h3{/*entre com as informações de cadastro*/
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--cinza);
+
+    padding-bottom: 27px;
 }
 
 
+/*section form*/
+section form fieldset{
+   border: none ;
+    
+}
+
+form fieldset h3{
+    padding-bottom: 0;
+}
 
 
+.icon-label {
+    position: relative;
+    border: 2px solid red;
+}
 
+.icon-label i {
+    position: absolute;
+    left: 10px; /* Ajuste a posição horizontal do ícone conforme necessário */
+    top: 50%; /* Ajuste a posição vertical do ícone conforme necessário */
+    transform: translateY(-50%);
+    color: #888; /* Cor do ícone */
+}
 
+#E-mail{
+    padding: 8px 30px;
+    font-family: Roboto;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    background-color: var(--bg-form-black);
+    
+}
+
+/*MAIN*/
 main{
     flex: 1;
     background: url(./assets/travel.svg) center / cover no-repeat ;
@@ -79,7 +175,10 @@ main{
         flex-direction: column;
         
     }
-
+    
+    aside{
+        width: 100%;
+    }
     main{
        flex: none;
        background-color: var(--bg-color-black);
