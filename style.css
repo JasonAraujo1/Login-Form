@@ -6,6 +6,7 @@
 
 body{
     height: 100vh;
+    
 }
 
 body *{
@@ -13,3 +14,74 @@ body *{
     font-family: 'Roboto', sans-serif;
 }
 
+
+:root{
+    --bg-color-img: rgb(244, 239, 220);
+    --bg-color-black: #191816;
+    --bege:#D4CCB6;
+    --cinza:#AFB6C2;
+    --amarelo:#FFC632;
+}
+
+
+.container{
+    display: flex;
+    
+}
+aside{
+    flex: 1;
+    display: flex;
+    height: 100vh;
+    background-color: var(--bg-color-black);
+    color: white;
+    
+}
+
+ aside header{
+    display: flex;
+    width: 100%;
+    padding: 0 150px;
+}
+
+aside header p{
+    color: var(--bege);
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    }
+
+section div h1{
+    color: var(--bege);
+}
+
+
+
+
+
+
+main{
+    flex: 1;
+    background: url(./assets/travel.svg) center / cover no-repeat ;
+    background-size: 100% 100%;
+    background-color:var(--bg-color-img);
+    
+    
+    height: 100vh;    
+}
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .container {
+        flex-direction: column;
+        
+    }
+
+    main{
+       flex: none;
+       background-color: var(--bg-color-black);
+    }
+}
