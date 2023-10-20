@@ -64,7 +64,10 @@ transform: translateY(20%);
     
 }
 
+.img-main{
+color-interpolation-filters: rebeccapurple;
 
+}
 
 aside header p span{/*logo texto*/
     color: var(--bege);
@@ -147,7 +150,7 @@ form fieldset h3{
     color: #888; /* Cor do ícone */
 }
 
-#E-mail{
+#E-mail, #senha{
    
     font-family: Roboto;
     font-size: 10px;
@@ -166,11 +169,12 @@ input::placeholder {
     padding: 0 30px;
 }
 
-#E-mail:focus{
+#E-mail:focus, #senha:focus{
     border-color: var(--amarelo);
     outline: 0;
     transition: 0.1s;
 }
+
 
 
 /*MAIN*/
