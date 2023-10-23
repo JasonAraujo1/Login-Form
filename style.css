@@ -64,10 +64,7 @@ transform: translateY(20%);
     
 }
 
-.img-main{
-color-interpolation-filters: rebeccapurple;
 
-}
 
 aside header p span{/*logo texto*/
     color: var(--bege);
@@ -78,8 +75,6 @@ aside header p span{/*logo texto*/
     
 
     }
-
-
 
 
 
@@ -136,44 +131,57 @@ form fieldset h3{
     padding-top: 20px;
 }
 
-
-.icon-label {/*classe da label*/
+label{
     position: relative;
-    
 }
 
-.icon-label i {/*icon(envelope / cadeado)*/
-    position: absolute;
-    left: 10px; /* Ajuste a posição horizontal do ícone conforme necessário */
-    top: 50%; /* Ajuste a posição vertical do ícone conforme necessário */
-    transform: translateY(-50%);
-    color: #888; /* Cor do ícone */
-}
 
-#E-mail, #senha{
-   
+input{/*texto da caixa de texto*/
+
+    padding: 0px 40px 0px 40px;
+    caret-color:var(--amarelo);
+    position: relative;
     font-family: Roboto;
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
     background-color: var(--bg-form-black);
     border: 1px solid var(--cinza-input);
+    
+
     max-width: 335px;
+    
     width: 100%;
     height: 40px;
     border-radius: 5px;
+    color: white;
+  
+}
+
+label i{
+    z-index: 1;
+    position: absolute;
+    padding: 10px;
+    color: #888; /* Cor do ícone */
     
 }
 
-input::placeholder {
-    padding: 0 30px;
-}
 
-#E-mail:focus, #senha:focus{
+
+
+
+#E-mail:focus, #senha:focus{/*cor da outline da box ao clicar*/
     border-color: var(--amarelo);
     outline: 0;
     transition: 0.1s;
 }
+
+
+
+
+
+
+
 
 
 

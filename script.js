@@ -21,3 +21,16 @@ senhaInput.addEventListener('focus', ()  => {
 senhaInput.addEventListener('blur', ()  => {
     senhaIcon.style.color = '#AFB6C2';
 }) 
+
+
+
+//EYE PASSWORD
+function mostrarSenha(){
+    var inputPass = document.getElementById('senha')
+    var btnShowPass = document.getElementById('eye-icon')
+
+    if(inputPass.type === 'password'){//aqui diz que : se o tipo da minha variável 'input pass' for exatamente igual a password eu quero que mude algo...
+        inputPass.setAttribute('type','text')//aqui vai mudar tipo do atributo do input para texto
+        btnShowPass.classList.replace('bi-eye', 'bi-eye-slash')
+    }
+}
