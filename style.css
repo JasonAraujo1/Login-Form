@@ -16,13 +16,14 @@ body *{
 
 
 :root{
-    --bg-color-img: rgb(244, 239, 220);
-    --bg-color-black: #191816;
+    --bg-color-img: #191616;
+    --bg-color-black: #191616;
     --bg-form-black:#24221F;
     --bege:#D4CCB6;
     --cinza:#AFB6C2;
-    --amarelo:#FFC632;
+    --amarelo: #f8c965;
     --cinza-input:#868686;
+    --marrom:#473404;
 }
 
 
@@ -35,6 +36,13 @@ body *{
 
 
  /*ASIDE */
+
+ a{/*todos os links*/
+    text-decoration: none;
+    color: var(--amarelo);
+} 
+
+
 aside{
     flex: 1;
     display: flex;
@@ -52,7 +60,7 @@ aside{
    display: flex;
    padding: 30px 30px 100px;
    
-    align-items: center;
+   align-items: center;
     
       
 }
@@ -84,9 +92,8 @@ aside header p span{/*logo texto*/
   section {
     padding: 40px 80px;
     background-color: var(--bg-form-black);
-    
-    border: 2px solid red;
-    
+    margin: 10%;
+    border-radius: 5px;
 }
 
  /*section body*/
@@ -188,6 +195,74 @@ label i{/*todos os icons*/
 
 
 
+.btn-esqueci{/*box do lembre-me e esquecia senha*/
+   
+    display: flex;
+    max-width: 335px;
+
+    color: var(--cinza);
+    padding: 20px 0;
+}
+
+.lembre-me{
+    flex: 1;
+
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0 5px;
+  
+} 
+
+.esqueci{
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.btn-entrar{/*botão entrar*/
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+
+    background-color: var(--amarelo);
+    max-width: 335px;
+    width: 100%;
+    padding: 12px 24px ;
+    color: var(--marrom);
+    border: none;
+    border-radius: 5px;
+}
+
+.h3-registre-se{/*h3 do botão registre-se*/
+    padding-top: 14px;
+    display: flex;
+    justify-content: center;
+    color: var(--amarelo);
+
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    align-items: center;
+
+}
+
+.registre-se{
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    padding-left:5px ;
+    
+}
+
+
+
 
 
 
@@ -204,7 +279,7 @@ main{
 
 
 
-
+/*MEDIA SCREEN*/
 
 @media screen and (max-width:600px) {
     .container {
@@ -219,4 +294,18 @@ main{
        flex: none;
        background-color: var(--bg-color-black);
     }
+    section {
+        padding: 40px 40px;
+    }
+    
+  
+    
+}
+
+
+/*HOVER*/
+
+.esqueci:hover, .registre-se:hover{
+    text-decoration:underline;
+    
 }
