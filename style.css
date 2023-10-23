@@ -158,14 +158,19 @@ input{/*texto da caixa de texto*/
   
 }
 
-label i{
+label i{/*todos os icons*/
     z-index: 1;
     position: absolute;
     padding: 10px;
-    color: #888; /* Cor do ícone */
+    color: var(--cinza); /* Cor do ícone */
     
 }
 
+
+#eye-icon{/*icon do olho*/
+    position: absolute;
+    right: 1%;
+}
 
 
 
@@ -177,8 +182,9 @@ label i{
 }
 
 
-
-
+::-ms-reveal {/*olho automático do navegador(não estilizado)*/
+    display: none;
+}
 
 
 
