@@ -14,9 +14,11 @@ body *{
     font-family: 'Roboto', sans-serif;
 }
 
+.container{
+    background-color: var(--bg-color-black);
+}
 
 :root{
-    --bg-color-img: #191616;
     --bg-color-black: #191616;
     --bg-form-black:#24221F;
     --bege:#D4CCB6;
@@ -50,9 +52,8 @@ aside{
     display: flex;
     height: 100vh;
     background-color: var(--bg-color-black);
-    color: white;
     flex-direction: column;
-    
+   
 }
 
 
@@ -78,10 +79,6 @@ aside{
     font-weight: 600;
     
 }
-
-
-
-
 
 
 
@@ -209,7 +206,7 @@ label i{/*todos os icons*/
     justify-content: space-between;
 }
 
-.btn-esqueci label{
+.btn-esqueci label{/*lembre-me text and box*/
     flex: 1;
 
     font-family: Roboto;
@@ -221,7 +218,7 @@ label i{/*todos os icons*/
   
 } 
 
-.esqueci{
+.esqueci{/*esquecia a senha */
     font-family: Poppins;
     font-size: 12px;
     font-style: normal;
@@ -246,7 +243,7 @@ label i{/*todos os icons*/
     cursor: pointer;
 }
 
-.h3-registre-se{/*h3 do botão registre-se*/
+.h3-registre-se{/*h3 do link registre-se*/
     padding-top: 14px;
     display: flex;
     justify-content: center;
@@ -307,11 +304,10 @@ label i{/*todos os icons*/
 main{
     flex: 1;
     background: url(./assets/travel.svg) center / cover no-repeat ;
-    background-size: 100% 100%;
-    background-color:var(--bg-color-img);
-    
-    
+    background-size: 100% 100% ;
+    margin-top: 0;    
     height: 100vh;    
+    
 }
 
 
@@ -353,20 +349,32 @@ main{
     
     aside{
         width: 100%;
+        padding: 5px 10px;
     }
+    section {
+        padding: 10px 40px;
+        margin: 0 10%;
+    }
+    
     main{
        flex: none;
        background-color: var(--bg-color-black);
+       
     }
-    section {
-        padding: 40px 40px;
-    }
-    
+ 
     #checkBox:checked{
         opacity: 1;
      
     }
     
-  
-    
+  #box{
+    padding: 30px 30px 75px;
+  }
+  main{
+   
+    height: 40vh;    
+    border: none;
+    background-size: 50% 100% ;
+    }
+
 }
