@@ -22,6 +22,7 @@ body *{
     --bege:#D4CCB6;
     --cinza:#AFB6C2;
     --amarelo: #f8c965;
+    --amarelo-hover: #f5e6c5;
     --cinza-input:#868686;
     --marrom:#473404;
 }
@@ -201,6 +202,10 @@ label i{/*todos os icons*/
 
     color: var(--cinza);
     padding: 20px 0;
+
+   
+    align-items: center;
+    justify-content: center;
 }
 
 .lembre-me{
@@ -235,6 +240,8 @@ label i{/*todos os icons*/
     color: var(--marrom);
     border: none;
     border-radius: 5px;
+
+    cursor: pointer;
 }
 
 .h3-registre-se{/*h3 do botão registre-se*/
@@ -261,17 +268,15 @@ label i{/*todos os icons*/
 }
 
 
-
-#btn-lembre-me{/*button de clicar para 'lembrar-me'*/
-    background-color: var(--bg-form-black);
-    border: 1px solid var(--cinza-input);
-    font-size: 20px;
-    border-radius: 4px;    
-    cursor: pointer;
+.checkBox{
     width: 20px;
-    height: 20px;
+    color: var(--amarelo);
+    background-color: #f8c965;
 
+    
 }
+
+
 
 
 /*MAIN*/
@@ -316,4 +321,14 @@ main{
 .esqueci:hover, .registre-se:hover{
     text-decoration:underline;
     
+}
+
+ .bi-eye-slash:hover, #eye-icon:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.btn-entrar:hover{
+    transform: scale(1.03);
+    transition: 0.2s;
 }
