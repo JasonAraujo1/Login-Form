@@ -337,7 +337,7 @@ main{
     }
     section {
         padding: 10px 40px;
-        margin: 45% 10% 10%;
+        margin: 30% 10% 10%;
 
     }
     
@@ -358,7 +358,7 @@ main{
 
     main{
     
-        height: 30vh;    
+        height: 35vh;    
         border: none;
         background-size: 60% 60% ;
         margin-right: 0;
