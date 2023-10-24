@@ -20,10 +20,11 @@ body *{
     --bg-color-black: #191616;
     --bg-form-black:#24221F;
     --bege:#D4CCB6;
-    --cinza:#AFB6C2;
     --amarelo: #f8c965;
     --amarelo-hover: #f5e6c5;
+    --cinza:#AFB6C2;
     --cinza-input:#868686;
+    --cinza-claro:#d3d7df;
     --marrom:#473404;
 }
 
@@ -142,7 +143,7 @@ label{
 }
 
 
-input{/*texto da caixa de texto*/
+ #E-mail, #senha{/*texto da caixa de texto*/
 
     padding: 0px 40px 0px 40px;
     caret-color:var(--amarelo);
@@ -205,10 +206,10 @@ label i{/*todos os icons*/
 
    
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.lembre-me{
+.btn-esqueci label{
     flex: 1;
 
     font-family: Roboto;
@@ -216,6 +217,7 @@ label i{/*todos os icons*/
     font-style: normal;
     font-weight: 400;
     padding: 0 5px;
+    cursor: pointer;
   
 } 
 
@@ -268,13 +270,35 @@ label i{/*todos os icons*/
 }
 
 
-.checkBox{
-    width: 20px;
-    color: var(--amarelo);
-    background-color: #f8c965;
 
-    
+
+
+
+#checkBox{
+    width: 15px;
+    height: 15px;
+    accent-color: #f8c965;
+    opacity: 20%;
+    cursor: pointer;
+    transition: 0.2s;
+   
 }
+
+
+#checkBox:checked{
+    opacity: 1;
+   transition: 0.2s;
+   
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -289,6 +313,33 @@ main{
     
     height: 100vh;    
 }
+
+
+
+
+
+/*HOVER*/
+
+.esqueci:hover, .registre-se:hover{
+    text-decoration:underline;
+    
+}
+
+ .bi-eye-slash:hover, #eye-icon:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.btn-entrar:hover{
+    transform: scale(1.03);
+    transition: 0.2s;
+}
+
+#checkBox:hover{
+    opacity: 60%;
+}
+
+
 
 
 
@@ -311,24 +362,11 @@ main{
         padding: 40px 40px;
     }
     
+    #checkBox:checked{
+        opacity: 1;
+     
+    }
+    
   
     
-}
-
-
-/*HOVER*/
-
-.esqueci:hover, .registre-se:hover{
-    text-decoration:underline;
-    
-}
-
- .bi-eye-slash:hover, #eye-icon:hover{
-    transform: scale(1.1);
-    transition: 0.2s;
-}
-
-.btn-entrar:hover{
-    transform: scale(1.03);
-    transition: 0.2s;
 }

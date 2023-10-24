@@ -49,3 +49,13 @@ function mostrarSenha(){
 }
 
 
+const inputCheck = document.getElementById('E-mail')
+const iconCheck = document.getElementById('icon-email')
+
+inputEmail.addEventListener('focus',() => {
+    iconEmail.style.color = '#FFC632';
+})
+
+inputEmail.addEventListener('blur',() => {
+    iconEmail.style.color = '#AFB6C2';
+})
