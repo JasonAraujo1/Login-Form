@@ -56,33 +56,31 @@ aside{
 
 
 /*aside header*/
- aside header{/*logo. img e texto*/
+ #box{/*logo. img e texto*/
    display: flex;
    padding: 30px 30px 100px;
+   position: relative;
+   left:5%;
    
-   align-items: center;
-    
-      
 }
 
-aside header img{/*logo img*/
-    
-transform: translateY(20%);
-    
-    
-}
-
-
-
-aside header p span{/*logo texto*/
+#box span{/*texto da logo*/
+   
+    position: absolute;
+    margin: 10px;
+     
     color: var(--bege);
     font-family: Poppins;
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
     
+}
 
-    }
+
+
+
+
 
 
 
@@ -177,6 +175,7 @@ label i{/*todos os icons*/
 #eye-icon{/*icon do olho*/
     position: absolute;
     right: 1%;
+    cursor: pointer;
 }
 
 
@@ -263,7 +262,16 @@ label i{/*todos os icons*/
 
 
 
+#btn-lembre-me{/*button de clicar para 'lembrar-me'*/
+    background-color: var(--bg-form-black);
+    border: 1px solid var(--cinza-input);
+    font-size: 20px;
+    border-radius: 4px;    
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
 
+}
 
 
 /*MAIN*/

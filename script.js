@@ -7,6 +7,8 @@ const senhaInput = document.getElementById('senha')
 const senhaIcon = document.getElementById('icon-senha')
 const eyeIcon = document.getElementById('eye-icon')
 
+const checkInput = document.getElementById('btn-esqueci')
+const checkIcon = document.getElementById('btn-lembre-me')
 
 
 inputEmail.addEventListener('focus',() => {
@@ -28,6 +30,13 @@ senhaInput.addEventListener('blur', ()  => {
 }) 
 
 
+checkInput.addEventListener('focus',() => {
+    checkIcon.style.color = '#FFC632';
+})
+
+checkInput.addEventListener('blur',() => {
+    checkIcon.style.color = '#AFB6C2';
+})
 
 
 //EYE PASSWORD
@@ -46,4 +55,7 @@ function mostrarSenha(){
 
 
 }
+
+
+/*BUTTON CHECK*/
 
