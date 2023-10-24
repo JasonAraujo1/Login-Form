@@ -18,8 +18,8 @@
 
 <br>
 
-<p align="center">Thumbnail aqui
-  <img alt="" src="" width="100%">
+<p align="center">
+  <img alt="" src=".github/login-form-thumbnail.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -27,7 +27,6 @@
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
-- [formsubmit.co](https://formsubmit.co) para capturar e-mails
 - Git e Github
 - Figma e Canva para design
 
