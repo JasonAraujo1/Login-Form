@@ -16,6 +16,8 @@ body *{
 
 .container{
     background-color: var(--bg-color-black);
+    display: flex;
+   
 }
 
 :root{
@@ -30,11 +32,6 @@ body *{
     --marrom:#473404;
 }
 
-
-.container{
-    display: flex;
-    
-}
 
 
 
@@ -53,17 +50,18 @@ aside{
     height: 100vh;
     background-color: var(--bg-color-black);
     flex-direction: column;
+    margin-left: 10%;
    
 }
-
 
 
 /*aside header*/
  #box{/*logo. img e texto*/
    display: flex;
    padding: 30px 30px 100px;
-   position: relative;
+   position: absolute;
    left:5%;
+   
    
 }
 
@@ -82,15 +80,15 @@ aside{
 
 
 
-
-
-
 /*SECTION*/   
   section {
+    max-width: 500px;
     padding: 40px 80px;
     background-color: var(--bg-form-black);
-    margin: 10%;
+    margin: 30% 10% 10%;
     border-radius: 5px;
+
+    
 }
 
  /*section body*/
@@ -269,8 +267,6 @@ label i{/*todos os icons*/
 
 
 
-
-
 #checkBox{
     width: 15px;
     height: 15px;
@@ -290,27 +286,15 @@ label i{/*todos os icons*/
 
 
 
-
-
-
-
-
-
-
-
-
-
 /*MAIN*/
 main{
     flex: 1;
     background: url(./assets/travel.svg) center / cover no-repeat ;
-    background-size: 100% 100% ;
+    background-size: 80% 100% ;
     margin-top: 0;    
     height: 100vh;    
-    
+    margin-right: 10%;
 }
-
-
 
 
 
@@ -337,8 +321,6 @@ main{
 
 
 
-
-
 /*MEDIA SCREEN*/
 
 @media screen and (max-width:600px) {
@@ -350,10 +332,13 @@ main{
     aside{
         width: 100%;
         padding: 5px 10px;
+        margin-left: 0;
+
     }
     section {
         padding: 10px 40px;
-        margin: 0 10%;
+        margin: 30% 10% 10%;
+
     }
     
     main{
@@ -367,14 +352,15 @@ main{
      
     }
     
-  #box{
+     #box{
     padding: 30px 30px 75px;
-  }
-  main{
-   
-    height: 40vh;    
-    border: none;
-    background-size: 50% 100% ;
     }
+    main{
+    
+        height: 40vh;    
+        border: none;
+        background-size: 50% 100% ;
+        margin-right: 0;
+        }
 
 }
