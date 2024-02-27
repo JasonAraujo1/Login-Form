@@ -37,7 +37,7 @@ Este projeto é uma aplicação de login projetada para facilitar o processo de 
 
 ## 🎨 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](<https://jasonaraujo1.github.io/projeto-switcher-sidebar-countdown/>). 
+Você pode visualizar o layout do projeto através [DESSE LINK](<https://jasonaraujo1.github.io/Login-Form/?E-mail=&E-mail=/>). 
 
 - Recursos:
 1. Ocultar Senha: A aplicação oferece a funcionalidade de ocultar a senha durante a digitação, fornecendo maior segurança e privacidade ao usuário. Para ativar ou desativar essa opção, basta clicar no ícone "Olho" ao lado do campo de senha.
